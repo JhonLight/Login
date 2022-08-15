@@ -1,0 +1,219 @@
+@font-face {
+  font-family: mark;
+  src: url(../../assets/font/MarkPro-Regular.ttf);
+}
+
+.home {
+
+  height: 100vh;
+  background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+  box-shadow: 0.54vh 0.54vh 9.4vh rgba(0, 0, 0, 0.25);
+  display: flex;
+  color: #E0E0E0;
+}
+
+.login {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  height: 94%;
+  justify-content: center;
+  flex-direction: column;
+  font-family: mark;
+}
+
+.ola {
+  font-weight: 400;
+  font-size: 8.04vh;
+  line-height: 10.18vh;
+  margin-top: 9vh;
+}
+
+.ola-p {
+  padding-top: 1.27vh;
+  font-size: 2.14vh;
+  line-height: 2.68vh;
+}
+
+.ola-2 {
+  padding-top: 12vh;
+  font-size: 4vh;
+  line-height: 5.10vh;
+}
+
+input {
+  font-family: mark;
+  margin-top: 2.42vh;
+  width: 50.8vh;
+  height: 8.05vh;
+  border-radius: 6.8vh;
+  border-color: #ffffff;
+  background: none;
+  color: #ffffff;
+  padding-left: 2.68vh;
+  font-size: 1rem;
+}
+
+.user:focus-within {
+  background-image: url(../../assets/img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: 47.58vh;
+
+}
+
+.senha:focus-within {
+  background-image: url(../../assets/img/icon-password.svg);
+  background-repeat: no-repeat;
+  background-position: 47.58vh;
+}
+
+.erro {
+  box-sizing: border-box;
+  font-size: 2.14vh;
+  line-height: 2.68vh;
+  text-align: center;
+  color: #E9B425;
+  margin-top: 3vh;
+
+}
+
+.btn-cadastro {
+  font-family: mark;
+  border: none;
+  background: none;
+  color: #E0E0E0;
+  cursor: pointer;
+  margin-top: 1vh;
+}
+
+.btn-cadastro:hover {
+  color: #E9B425;
+}
+
+.btn-continua {
+  font-family: mark;
+  width: 100%;
+  height: 8.98vh;
+  border-color: #ffffff;
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+  background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 6.7vh;
+  color: #ffffff;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-color: #FF2D04;
+  margin-top: 8vh;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.home-img {
+  width: 50%;
+  display: flex;
+}
+
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.logo {
+  width: 41vh;
+  height: 9.2vh;
+  position: absolute;
+  margin-top: 1.7vh;
+}
+
+
+@media screen and (max-width: 912px) {
+  .ola {
+    font-size: 6.75rem;
+  }
+
+  .ola-p {
+    font-size: 1rem;
+  }
+
+  .ola-2 {
+    font-size: 1.875rem;
+  }
+
+  input {
+    width: 24.8vh;
+    height: 6.05vh;
+  }
+
+  .erro {
+    font-size: 1rem;
+  }
+
+  .btn-continua {
+    height: 6.98vh;
+  }
+
+  .logo {
+    width: 24vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ola {
+    font-size: 3.75rem;
+  }
+
+  input {
+    width: 92%;
+  }
+
+  .logo {
+    width: 33vh;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .center {
+    width: 76%;
+  }
+
+  .ola {
+    font-size: 4.75rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #homee-img {
+    display: none;
+  }
+
+  .home {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .center {
+    background-image: url(/../assets/img/Logo-Compasso-Branco-hor\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .login {
+    width: 100%;
+  }
+
+  input {
+    width: 89%;
+  }
+}

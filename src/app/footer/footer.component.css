@@ -1,0 +1,193 @@
+@font-face {
+  font-family: mark;
+  font-size: calc(62.5% * 2);
+  src: url(../../assets/font/MarkPro-Regular.ttf);
+}
+
+footer {
+  background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: -webkit-fill-available;
+  justify-content: right;
+  font-family: mark;
+  color: #FFFFFF;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.graveto {
+  width: 61px;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+  transform: rotate(90deg);
+  display: flex;
+  align-self: center;
+  margin-right: 5%;
+}
+
+.bloco-second {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-btn {
+  display: flex;
+  justify-content: center;
+  width: 35.12vh;
+  margin-right: 2%
+}
+
+.link {
+  width: 50%;
+  height: 100%;
+}
+
+.link-center {
+  width: 54%;
+  text-align: center;
+}
+
+.refresh {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: -webkit-right;
+}
+
+.texto {
+  font-size: max(0.99vw, 0.563rem);
+}
+
+.decrecente-p {
+  height: 65%;
+  display: flex;
+  align-items: end;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.p-home-3 {
+  font-size: 0.875rem;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.75rem;
+  background: none;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+  background: none;
+  border: none;
+  margin: 0%;
+  justify-content: center;
+  padding: 50%;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+a:hover {
+  background: #FFFFFF;
+  color: #C13216;
+}
+
+button:hover {
+  background: #FFFFFF;
+  color: #C13216;
+}
+
+@media screen and (max-width: 912px) {
+  .texto {
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .graveto {
+    margin-right: 0%;
+  }
+
+  a {
+    font-size: 0.60rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  footer {
+    flex-direction: column;
+  }
+
+  .graveto {
+    display: none;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .texto {
+    padding: 3%;
+    font-size: small;
+    text-align: -webkit-match-parent;
+  }
+
+  .refresh {
+    justify-content: center;
+    padding-bottom: 1%;
+  }
+
+  .decrecente-p {
+    font-size: 2rem;
+  }
+
+  .flex-btn {
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .link-center {
+    width: 100%;
+  }
+
+  .link {
+    width: 50%;
+    height: 100%;
+
+  }
+
+  a {
+    padding-top: 16.5%;
+    padding-bottom: 16.5%;
+    font-weight: 700;
+    font-size: 0.75rem;
+    justify-content: center;
+  }
+
+  button {
+    padding: 0%;
+    padding-top: 16.5%;
+    padding-bottom: 16.5%;
+  }
+}

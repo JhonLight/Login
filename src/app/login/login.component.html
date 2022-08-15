@@ -1,0 +1,58 @@
+<div class="home">
+  <div class="login">
+    <div class="center">
+      <div class="texto">
+        <h1 class="ola">Olá,</h1>
+        <p class="ola-p">
+          Para continuar navegando de forma <br />
+          segura, efetue o login na rede.
+        </p>
+        <h1 class="ola-2">Login</h1>
+      </div>
+      <fieldset>
+        <div class="login-user">
+          <input
+            class="user"
+            type="text"
+            placeholder="Usuário"
+            [(ngModel)]="user"
+            (click)="esconde()"
+          />
+        </div>
+
+        <div>
+          <input
+            class="senha"
+            type="password"
+            placeholder="Senha"
+            [(ngModel)]="senha"
+          />
+        </div>
+        <div class="cadastro">
+          <button type="submit" (click)="cadastrar()" class="btn-cadastro">
+            Cadastrar-se
+          </button>
+        </div>
+        <div *ngIf="mostraErro">
+          <p class="erro">
+            {{ error }} <br />
+            {{ error2 }}
+          </p>
+        </div>
+
+        <div class="continuar">
+          <button class="btn-continua" type="submit" (click)="valida()">
+            Continuar
+          </button>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+
+  <div class="home-img" id="homee-img">
+    <div class="flex">
+      <img class="img" src="../../assets/img/Mask Group.png" />
+      <img src="../../assets/img/Logo-Compasso-Branco-hor 1.svg" class="logo" />
+    </div>
+  </div>
+</div>

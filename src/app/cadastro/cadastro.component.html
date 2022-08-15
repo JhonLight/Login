@@ -1,0 +1,58 @@
+<div class="home">
+  <div class="inscreva">
+    <h1>Inscrever-se</h1>
+    <!--  <div>
+      <button class="btn-google">Inscrever-se com o Google</button>
+    </div> -->
+    <form>
+      <fieldset>
+        <div class="uni">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="uni">
+          <label for="senha-cad">Senha *</label>
+          <input
+            type="password"
+            id="senha-cad"
+            minlength="6"
+            maxlength="15"
+            [(ngModel)]="senha"
+            (click)="esconde()"
+          />
+        </div>
+        <div class="uni">
+          <label for="conf-senha">Confirme sua senha *</label>
+          <input
+            type="password"
+            id="conf-senha"
+            minlength="6"
+            maxlength="15"
+            [(ngModel)]="confSenha"
+          />
+        </div>
+        <div class="uni">
+          <button id="voltar" (click)="voltar()">Já tenho uma conta</button>
+        </div>
+        <div *ngIf="senhaIgual">
+          <p class="erro">
+            {{ erro }}
+          </p>
+        </div>
+
+        <div class="uni">
+          <button class="btn-cadastro" (click)="validaSenha()">
+            Inscrever-se
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="home-img">
+    <div class="flex">
+      <img class="img" src="../../assets/img/Mask Group.png" />
+      <img src="../../assets/img/Logo-Compasso-Branco-hor 1.svg" class="logo" />
+    </div>
+  </div>
+</div>

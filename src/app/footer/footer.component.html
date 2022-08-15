@@ -1,0 +1,33 @@
+<footer>
+  <div class="flex">
+    <div class="link-center">
+      <p class="refresh texto">
+        Essa janela do navegador é usada para manter sua sessão de autenticação
+        ativa. Deixe-a aberta em segundo plano e abra uma nova janela para
+        continuar a navegar.
+      </p>
+    </div>
+
+    <div class="graveto"></div>
+    <div class="flex">
+      <div class="link-center">
+        <p class="refresh">Application refresh in</p>
+      </div>
+      <div class="link-center">
+        <p class="decrecente-p">{{ decrecente }}</p>
+        <div class="p-home-3">
+          <p>seconds</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-btn">
+    <div class="link">
+      <a href="https://www.google.com">Continuar Navegando</a>
+    </div>
+    <div class="link">
+      <button (click)="voltaLogin()">Logout</button>
+    </div>
+  </div>
+</footer>

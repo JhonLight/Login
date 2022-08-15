@@ -1,0 +1,96 @@
+@font-face {
+  font-family: mark;
+  src: url(../../assets/font/MarkPro-Regular.ttf);
+}
+
+
+header {
+  color: #222222;
+  font-family: mark;
+  width: 100%;
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-padding {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3vh;
+
+
+}
+
+.padding1 {
+  padding-left: 5vh;
+}
+
+.padding2 {
+  padding-right: 5vh;
+}
+
+.compasss {
+  width: 20.1vh;
+  height: 5.73vh;
+}
+
+.relogio {
+  height: 19.571vh;
+  font-weight: 700;
+  font-size: min(16vw, 7.125rem);
+  line-height: 20vh;
+  text-align: center;
+}
+
+.font {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 2.412vh;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  align-items: center;
+}
+
+.clima {
+  width: 4.55vh;
+  margin-right: 1.6vh;
+}
+
+.temperatura {
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 8.17vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 912px) {
+  .padding1 {
+    padding-left: 1%;
+
+  }
+
+  .padding2 {
+    padding-right: 1%;
+  }
+
+  .relogio {
+    height: 184px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .flex {
+    display: none;
+  }
+}
