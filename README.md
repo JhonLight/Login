@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Study project with Angular developing:
 + API consumption
-+ responsive layout
++ Responsive LayouL
 + General Login Validations
 
 ## Development server
