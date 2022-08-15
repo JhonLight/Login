@@ -3,8 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
 Study project with Angular developing:
-+ responsiveness
 + API consumption
++ responsive layout
 + General Login Validations
 
 ## Development server
