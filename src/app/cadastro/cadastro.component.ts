@@ -12,14 +12,16 @@ export class CadastroComponent implements OnInit {
   confSenha: string = ''
   senhaIgual: boolean = false
   erro: string = 'X Senhas não conferem'
+  erroMenor: string = 'X Senha menor que seis caracteres'
+
 
   constructor( private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  validaSenha(): void {
-    if (this.senha == '123456' && this.confSenha == '123456') {
+  validaSenhaIgual(): void {
+    if (this.senha == this.confSenha ) {
       this.router.navigate(['home'])
 
     } else {
@@ -29,6 +31,14 @@ export class CadastroComponent implements OnInit {
       this.senhaIgual = true
     }
   }
+
+  /* validaSenhaTamanho (): void{
+    if (this.senha.length > 5 && this.confSenha.length > 5) {
+
+    } else {
+      this.senhaIgual = true
+    }
+  } */
 
   esconde():void{
     this.senhaIgual = false

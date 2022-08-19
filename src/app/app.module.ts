@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule, registerLocaleData } from '@angular/common';
 import locale from '@angular/common/locales/pt';
 import { CadastroComponent } from './cadastro/cadastro.component'
+import { environment } from 'src/environments/environment';
 
 registerLocaleData(locale);
 
@@ -29,7 +30,8 @@ registerLocaleData(locale);
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    /* AngularFireModule.initializeApp(environment.firebase) */
   ],
   exports: [
     LoginComponent,
